@@ -32,7 +32,9 @@ def cari(query:str):
         parse = BeautifulSoup(req.text, "html.parser")
         for i in parse.find_all("ul",attrs={"class":"peribahasa"})[0].find_all("li"):
             if i.i:
-                p+=[peribahasa(list(i.strings)[0], i.i.text[1:])]
+                select=i.select("i")
+                arti=select[0].extract().text[1:]
+                p+=[peribahasa(i.text, arti)]
         return p
     except IndexError:
         raise PeribahasaTidakDitemukan("!!")

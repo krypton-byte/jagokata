@@ -4,13 +4,13 @@ base_dir = path.abspath(path.dirname(__file__))
 setup(
   name = 'jagokata',        
   packages = ['jagokata'],   
-  version = '0.0.2',    
+  version = '0.0.3',    
   license='MIT',     
   description = 'JagoKata Scrapper, kata-bijak&peribahasa', 
   author = 'Krypton Byte',                  
   author_email = 'galaxyvplus6434@gmail.com',     
   url = 'https://github.com/krypton-byte/jagokata',   
-  download_url = 'https://github.com/krypton-byte/jagokata/archive/0.0.2.tar.gz',    
+  download_url = 'https://github.com/krypton-byte/jagokata/archive/0.0.3.tar.gz',    
   keywords = ['jagokata', 'peribahasa', 'kata-bijak', 'katabijak'], 
   install_requires=[           
           'bs4',
